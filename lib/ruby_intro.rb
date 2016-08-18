@@ -3,11 +3,12 @@
 # Part 1
 
 def sum arr
-  # YOUR CODE HERE
+  arr.reduce(0,:+)
 end
 
 def max_2_sum arr
   # YOUR CODE HERE
+  sum arr.sort{|x,y| y<=>x}.take(2)
 end
 
 def sum_to_n? arr, n
