@@ -13,6 +13,13 @@ end
 
 def sum_to_n? arr, n
   # YOUR CODE HERE
+  if (arr == [])  
+    false
+  elsif (arr.combination(2).to_a.find{ |x| x[0]+x[1] == n} != nil)  
+    true
+  else 
+    false
+  end
 end
 
 # Part 2
